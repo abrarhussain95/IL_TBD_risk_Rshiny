@@ -14,7 +14,7 @@ ui <- fluidPage(
     "))
   ),
   
-  titlePanel("Interactive Monthly Tick Risk Maps in Illinois"),
+  titlePanel("Monthly tick-borne diseases' risk in Illinois"),
   
   tabsetPanel(
     tabPanel(
@@ -40,10 +40,17 @@ ui <- fluidPage(
         src = "map_is_monthly.html",
         style = "width:100%; height:850px; border:none;"
       )
+    ),
+    tabPanel(
+      "Heat Maps",
+      br(),
+      tags$iframe(
+        src = "maps_combined_idw.html",
+        style = "width:100%; height:850px; border:none;"
+      )
     )
   )
 )
 
 server <- function(input, output, session) {}
-
 shinyApp(ui, server)
