@@ -5,6 +5,6 @@ account: abrarhussain
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17089262
-bundleId: 11950071
+bundleId: 11950167
 url: https://abrarhussain.shinyapps.io/interactive_maps/
 version: 1
